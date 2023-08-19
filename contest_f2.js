@@ -16,7 +16,7 @@ function addStudent() {
     age: "..",
     degree: "BE",
   };
-  data.forEach((x, y) => (newstudent[x] = y ? y : newstudent[x]));
+  data.forEach((x, y) => (newstudent[y] = x ? x : newstudent[y]));
   studentData = [...studentData, newstudent];
   form1.reset();
   display(studentData);
